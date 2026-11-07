@@ -1,0 +1,13 @@
+build/
+bin/
+out/
+data/*.vcf.gz
+data/*.vcf.gz.part
+data/hapmap.tar.gz
+data/fetch.log
+*.hap.bin
+*.hap.txt
+haplotypes.csv
+.DS_Store
+lib/
+doc/

@@ -1,0 +1,25 @@
+# Doxygen configuration for hapcoal (`make doc` -> doc/html/index.html)
+PROJECT_NAME           = "hapcoal"
+PROJECT_NUMBER         = 1.0.0
+PROJECT_BRIEF          = "SMC / SMC' / MaCS coalescent haplotype simulator (C++17 static library)"
+OUTPUT_DIRECTORY       = doc
+INPUT                  = docs/hapcoal.md include/hapcoal src examples/main.cpp
+FILE_PATTERNS          = *.hpp *.cpp *.md
+RECURSIVE              = YES
+USE_MDFILE_AS_MAINPAGE = docs/hapcoal.md
+MARKDOWN_SUPPORT       = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+EXTRACT_ANON_NSPACES   = NO
+SOURCE_BROWSER         = YES
+STRIP_FROM_PATH        = .
+STRIP_FROM_INC_PATH    = include
+FULL_PATH_NAMES        = YES
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+HAVE_DOT               = NO
+QUIET                  = YES
+WARN_IF_UNDOCUMENTED   = NO
+EXAMPLE_PATH           = examples
+PREDEFINED             = _OPENMP HAPCOAL_HAVE_ZLIB
